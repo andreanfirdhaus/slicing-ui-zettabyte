@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Slicing UI Zettabyte</title>
+        <link rel="icon" type="image/x-icon" href="./assets/favicon.jpg" />
+        <link rel="stylesheet" href="./styles/main.css" />
+
+        <!--CDN INTER FONT-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+            rel="stylesheet" />
+    </head>
+    <body>
+        <main>
+            <!--Simple Pricing! Section-->
+            <section class="pricing-container">
+                <header>
+                    <h1>Simple Pricing!</h1>
+                    <p>
+                        The most advancded customer support tools with a simple
+                        and affordable pricing. And you can always try for 30
+                        days. free!
+                    </p>
+                </header>
+
+                <!--Pricing plan-->
+                <div class="pricing-content">
+                    <!--Basic plan-->
+                    <article
+                        class="pricing-card"
+                        aria-labelledby="basic-plan"
+                        onclick="cardIsSelected()">
+                        <h3>Basic</h3>
+                        <div class="pricing-price">
+                            <p>$</p>
+                            <p>4</p>
+                            <p>/month</p>
+                        </div>
+                        <hr />
+                        <ul class="pricing-list">
+                            <li><strong>10</strong> Projects</li>
+                            <li><strong>10</strong> Pages</li>
+                            <li><strong>100</strong> Mb Disk Space</li>
+                        </ul>
+                        <button onclick="showingAlretSucess()" type="button">
+                            BUY NOW
+                        </button>
+                    </article>
+
+                    <!--Standard plan-->
+                    <article
+                        class="pricing-card"
+                        aria-labelledby="standard-plan"
+                        onclick="cardIsSelected()">
+                        <div class="card-header">
+                            <h3>Standard</h3>
+                            <p>Save 15%</p>
+                        </div>
+                        <div class="pricing-price">
+                            <p>$</p>
+                            <p>8</p>
+                            <p>/month</p>
+                        </div>
+                        <hr />
+                        <ul class="pricing-list">
+                            <li><strong>20</strong> Projects</li>
+                            <li><strong>20</strong> Pages</li>
+                            <li><strong>200</strong> Mb Disk Space</li>
+                        </ul>
+                        <button onclick="showingAlretSucess()" type="button">
+                            BUY NOW
+                        </button>
+                    </article>
+
+                    <!--Advanced plan-->
+                    <article
+                        class="pricing-card"
+                        aria-labelledby="advancded"
+                        onclick="cardIsSelected()">
+                        <h3>Advanced</h3>
+                        <div class="pricing-price">
+                            <p>$</p>
+                            <p>12</p>
+                            <p>/month</p>
+                        </div>
+                        <hr />
+                        <ul class="pricing-list">
+                            <li><strong>40</strong> Projects</li>
+                            <li><strong>40</strong> Pages</li>
+                            <li><strong>500</strong> Mb Disk Space</li>
+                        </ul>
+                        <button onclick="showingAlretSucess()" type="button">
+                            BUY NOW
+                        </button>
+                    </article>
+                </div>
+            </section>
+
+            <!--FAQ Section-->
+            <section class="faq-container">
+                <header>
+                    <h2>Frequently Asked Questions</h2>
+                </header>
+
+                <div class="faq-content">
+                    <article>
+                        <h4>How does free trial work?</h4>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and
+                            scrambled it to make a type specimen book.
+                        </p>
+                    </article>
+                    <article>
+                        <h4>Can I cancle any time?</h4>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and
+                            scrambled it to make a type specimen book.
+                        </p>
+                    </article>
+                </div>
+            </section>
+        </main>
+        <script src="main.js"></script>
+    </body>
+</html>
