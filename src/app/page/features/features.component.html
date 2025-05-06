@@ -1,0 +1,10 @@
+<main class='max-w-7xl mx-auto p-12'>
+  <h1 class='text-center text-lg'>features works!</h1>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+    <app-cards-features
+    *ngFor="let item of features"
+    [feature]="item"
+  ></app-cards-features>
+  </div>
+</main>

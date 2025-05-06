@@ -1,0 +1,96 @@
+header {
+  padding: 1rem 2rem;
+  background-color: #fff;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; // biar responsif di layar kecil
+    gap: 1rem;
+  }
+
+  figure {
+    margin: 0;
+
+    img {
+      height: 40px;
+      width: auto;
+    }
+  }
+
+  ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+
+    li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+
+      &.active {
+        color: #007bff; 
+      }
+
+      &:hover {
+        color: #0056b3;
+      }
+    }
+  }
+
+  div {
+    display: flex;
+    gap: 1rem;
+
+    button {
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      font-weight: 500;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+
+      &:first-child {
+        background-color: transparent;
+        color: #007bff;
+        border: 1px solid #007bff;
+
+        &:hover {
+          background-color: #007bff;
+          color: #fff;
+        }
+      }
+
+      &:last-child {
+        background-color: #007bff;
+        color: white;
+
+        &:hover {
+          background-color: #0056b3;
+        }
+      }
+    }
+  }
+
+  // Responsive: stack items vertically on small screens
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    ul {
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    div {
+      flex-direction: column;
+      width: 100%;
+      button {
+        width: 100%;
+      }
+    }
+  }
+}
