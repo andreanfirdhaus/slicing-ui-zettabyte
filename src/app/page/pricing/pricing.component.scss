@@ -172,6 +172,28 @@
 }
 
 // Media Queries for Responsiveness
+@media (max-width: 1023px) {
+  .pricing-section {
+    padding: 100px 60px;
+    height: auto;
+  }
+
+  .pricing-cards {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  .pricing-header .pricing-title {
+    font-size: 42px;
+  }
+
+  .pricing-header .pricing-desc {
+    font-size: 15px;
+    max-width: 400px;
+  }
+}
+
+
 @media (max-width: 768px) {
   .pricing-section {
     padding: 80px 40px;
